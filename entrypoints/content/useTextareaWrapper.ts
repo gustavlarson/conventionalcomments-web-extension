@@ -97,7 +97,6 @@ function forceComment(
   }
 
   setTextareaValue(textarea, newValue);
-  textarea.dispatchEvent(new Event("input", { bubbles: true }));
   textarea.dispatchEvent(new Event("change"));
 }
 
